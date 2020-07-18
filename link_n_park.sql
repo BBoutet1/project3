@@ -1,7 +1,7 @@
 
-DROP DATABASE IF EXISTS `link_n_park`;
+DROP DATABASE IF EXISTS link_n_park;
 
 -- Creates the database --
-CREATE DATABASE `link_n_park`;
-USE `link_n_park`;
+CREATE DATABASE link_n_park;
+USE link_n_park;
 
