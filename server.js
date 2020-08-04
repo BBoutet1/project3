@@ -31,17 +31,14 @@ app.use(routes);
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
-    const root = require('path').join(__dirname, 'client', 'build')
-    app.use(express.static(root));
-    app.get("*", (req, res) => {
-        res.sendFile('index.html', { root });
-    })
+    app.use(express.static(path.join(__dirname, './client/build')));
 
     // Regularly update data from external APIs 
     dataRefreshCron();
-} else {
-    app.use(express.static("client/public"));
 }
+
+const routes = require("./routes");
+app.use(routes);
 
 // Syncing our database and logging a message to the user upon success
 db.sequelize.sync({ force: false }).then(function() {
