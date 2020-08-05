@@ -11,7 +11,7 @@ import {
   Autocomplete,
 } from "@react-google-maps/api";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import FindRoute from "../FindRoute";
+import FindRoute from "../../pages/FindRoute";
 import FindBike from "../FindBike";
 import FindParking from "../FindParking";
 import Nav from "../Nav";

@@ -36,8 +36,6 @@ if (process.env.NODE_ENV === "production") {
     dataRefreshCron();
 }
 
-const routes = require("./routes");
-app.use(routes);
 
 // Syncing our database and logging a message to the user upon success
 db.sequelize.sync({ force: false }).then(function() {
