@@ -26,8 +26,7 @@ app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true 
 app.use(passport.initialize());
 app.use(passport.session());
 
-const routes = require("./routes");
-app.use(routes);
+
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -36,6 +35,8 @@ if (process.env.NODE_ENV === "production") {
     dataRefreshCron();
 }
 
+const routes = require("./routes");
+app.use(routes);
 
 // Syncing our database and logging a message to the user upon success
 db.sequelize.sync({ force: false }).then(function() {
