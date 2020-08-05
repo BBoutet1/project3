@@ -203,10 +203,10 @@ class FindRoute extends Component {
     return (
       <div>
         <Nav />
-        <LoadScript
+        {/* <LoadScript
           googleMapsApiKey={googleKey}
           libraries={libraries}
-        >
+        > */}
           <div className="container">
             <GoogleMap
               // Map container
@@ -420,7 +420,7 @@ class FindRoute extends Component {
               </button>
             </div>
           </div>
-        </LoadScript>
+        {/* </LoadScript> */}
       </div>
     );
   }

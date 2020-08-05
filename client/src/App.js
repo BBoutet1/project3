@@ -23,13 +23,12 @@ function App() {
           </Route>
 
           <Route exact path={["/route"]} >
-            {/* <MapContainer /> */}
-            <MapRoute />
+            <MapContainer/>
           </Route>
 
-          <Route exact path={["/route1"]} >
+          {/* <Route exact path={["/route1"]} >
             <MapContainer />
-          </Route>
+          </Route> */}
 
           <Route exact path={["/parking"]} >
             <MapContainer />
@@ -40,7 +39,7 @@ function App() {
           </Route>
 
           <Route exact path={["/bikeshare"]}>
-            <MapSearch/>
+            <MapContainer/>
           </Route>
 
           <Route exact path={["/profile"]}>

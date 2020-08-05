@@ -35,8 +35,8 @@ const containerStyle = {
   height: '100%'
 };
 
-// api libraries for LoadScript
-const libraries = ['places']
+// // api libraries for LoadScript
+// const libraries = ['places']
 
 // Bounds for autocomplete search results
 const searchBounds = {
@@ -199,7 +199,7 @@ class GoogleMapPage extends Component {
     <div style={containerFull}>
         <Nav />
           <div style={{height:"100%"}}>
-          <LoadScript googleMapsApiKey={googleKey} libraries={libraries}>
+          {/* <LoadScript googleMapsApiKey={googleKey} libraries={libraries}> */}
             <GoogleMap 
               id="map-canvas"
               mapContainerStyle={containerStyle}
@@ -257,7 +257,7 @@ class GoogleMapPage extends Component {
                 
             </GoogleMap>
           
-          </LoadScript> 
+          {/* </LoadScript>  */}
         </div>
 
     </div>
