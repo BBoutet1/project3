@@ -13,17 +13,17 @@ import { BicyclingLayer, GoogleMap, LoadScript} from "@react-google-maps/api";
 import { PrimaryButton } from '../components/Buttons';
 import LocationSearch from '../components/LocationSearch';
 
-let googleKey;
+// let googleKey;
 
-if(process.env.google_key_1) {
-  googleKey = process.env.google_key_1
-}
-else{
-  try{
-  const googleKeys = require("../utils/google_keys.json");
-  googleKey = googleKeys.key1;
-  } catch{}
-}
+// if(process.env.google_key_1) {
+//   googleKey = process.env.google_key_1
+// }
+// else{
+//   try{
+//   const googleKeys = require("../utils/google_keys.json");
+//   googleKey = googleKeys.key1;
+//   } catch{}
+// }
 
 const containerFull = {
   width: '100vw',
