@@ -312,7 +312,7 @@ class FindRoute extends Component {
               {this.state.distance!=="" && (<table className="row z-depth-5">
                 <thead className="thead">
                   <tr>
-                    <th colSpan="2">Origin</th>
+                    <th colSpan="2" className="columnTitle">Origin</th>
                   </tr>
                 </thead>
 
@@ -323,7 +323,7 @@ class FindRoute extends Component {
                 </tbody>
                 <thead className="thead">
                   <tr>
-                    <th colSpan="2">Destination</th>
+                    <th colSpan="2" className="columnTitle">Destination</th>
                   </tr>
                 </thead>
 
@@ -334,8 +334,8 @@ class FindRoute extends Component {
                 </tbody>
                 <thead className="thead">
                   <tr>
-                    <th>Distance</th>
-                    <th>Time</th>
+                    <th className="columnTitle">Distance</th>
+                    <th className="columnTitle">Time</th>
                   </tr>
                 </thead>
 
@@ -368,7 +368,7 @@ class FindRoute extends Component {
                   >
                     <i className="material-icons center">local_parking</i>
                 </button><br/>
-                <p className="findButtonTitle">Close Bike Stations</p>
+                <p className="findButtonTitle">Close Bike Parkings</p>
               </div>}
               
             </div>
