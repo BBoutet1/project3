@@ -19,7 +19,8 @@ body {
 }
 
 #right-panel,
-#rightPanelPark {
+#rightPanelPark,
+#rightPanelRate {
     position: absolute;
     top: 64px;
     left: 63%;
@@ -27,6 +28,18 @@ body {
     width: 37%;
     padding: 8px;
     border-radius: 15px;
+    /* background-image: url("../homepage.png"); */
+    background-image: url("../profile.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 90% 100%;
+    /* background-size: auto; */
+    background-size: 30%;
+}
+
+.routeForm {
+    opacity: 1;
+    background-color: white;
 }
 
 .inputs {
@@ -43,11 +56,34 @@ label {
     margin: 5px;
     width: 70%;
     height: 30px;
+    /* max-height: 90%; */
+    /* min-height: 40%; */
     margin-left: 18%;
+    opacity: 1;
+    background-color: white;
 }
+
+
+/* 
+select {
+    max-height: 40px;
+    min-height: 90px;
+} */
+
+
+/* 
+.browser-default {
+    max-height: 40%;
+    min-height: 90%;
+} */
 
 .slct-label {
     width: 40%;
+    /* max-width: 90%;
+    min-width: 40%; */
+    /* max-height: 40%;
+    min-height: 90%; */
+    /* height: 100%; */
     padding: 0px;
     background-color: #78bcc5ff;
     color: white;
@@ -132,11 +168,13 @@ thead:first-child tr:first-child th:first-child {
     border-radius: 5px 5px 0 0;
 }
 
-#locationColumn {
+#locationColumn,
+#locationColumnRate {
     border-radius: 5px 0 0 0;
 }
 
-#bikesColumn {
+#bikesColumn,
+#bikesColumnRate {
     border-radius: 0 5px 0 0;
 }
 
@@ -181,23 +219,29 @@ button {
 
 /* START FIND BIKE PAGE STYLING */
 
-.sideBarButton {
+.sideBarButton,
+.sideBarButtonClose {
     background-color: #78bcc5ff;
-    width: 5%;
+    width: 5rem;
     border-radius: 25px;
+    align-content: center;
+    /* line-height: 20px; */
 }
 
-.sideBarButton:hover {
+.sideBarButton:hover,
+.sideBarButtonClose:hover {
     background-color: #00bfa5;
 }
 
-.sideBarButton:active {
+.sideBarButton:active,
+.sideBarButtonClose:active {
     background-color: #00bfa5;
     box-shadow: 0 2px #666;
     transform: translateY(4px);
 }
 
-.sideBarButton:focus {
+.sideBarButton:focus,
+.sideBarButtonClose:focus {
     background-color: #78bcc5ff;
 }
 
