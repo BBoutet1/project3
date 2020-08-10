@@ -7,7 +7,7 @@ function NearbyTable(props) {
   return(
     <div>
     {
-            (props.origins!==[]) &&(
+            (props.origins!==[]) && props.results ===null && (
                 <DistanceMatrixService
                   // required
                   options={{ // eslint-disable-line react-perf/jsx-no-new-object-as-prop
@@ -17,6 +17,7 @@ function NearbyTable(props) {
                   }}
                    // required
                   callback={props.distancesCallback}
+                  results ={props.results}
                 />)
           }
           
