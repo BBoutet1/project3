@@ -29,12 +29,12 @@ body {
     padding: 8px;
     border-radius: 15px;
     /* background-image: url("../homepage.png"); */
-    background-image: url("../profile.png");
+    background-image: url("../right-panel.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 90% 100%;
+    background-position: 100% 100%;
     /* background-size: auto; */
-    background-size: 30%;
+    background-size: 40%;
 }
 
 .routeForm {
