@@ -4,7 +4,6 @@
 * [Tobi Bailey](https://github.com/tobi-bailey)
 * [Brice Boutet](BBoutet1)
 * [Joel Clifford](https://github.com/joel-clifford-bootcamp)
-* [Laura Gallant](https://github.com/lauragallant)
 * [Massimo Guida](https://github.com/MG-cpu90)
 
 ## Description
